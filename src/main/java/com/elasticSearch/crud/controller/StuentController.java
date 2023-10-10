@@ -49,9 +49,9 @@ public class StuentController {
 	public Iterable<Student> findAll(){
 		return studentService.getAllStudent();
 	}
-	@ResponseBody
+	
 	@GetMapping("/student/{id}")
-	public Object getStudent(@PathVariable int id) throws Exception {
+	public Object getStudent(@PathVariable int id)  {
 		if(validate.validateId(id)) {
 			   return fileNotFoune;
 		}
