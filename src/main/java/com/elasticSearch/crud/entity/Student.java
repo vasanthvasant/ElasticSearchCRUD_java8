@@ -22,5 +22,5 @@ public class Student {
 	private long mobile;
 	@Field(type = FieldType.Text,name = "name")
 	private String email;
-
+	
 }
